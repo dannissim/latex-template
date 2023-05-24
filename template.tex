@@ -1,0 +1,59 @@
+\documentclass{informs3}
+
+\DoubleSpacedXI{}
+
+\usepackage{endnotes}
+\let\footnote=\endnote
+\let\enotesize=\normalsize
+\def\notesname{Endnotes}%
+\def\makeenmark{$^{\theenmark}$}
+\def\enoteformat{\rightskip0pt\leftskip0pt\parindent=1.75em
+  \leavevmode\llap{\theenmark.\enskip}}
+
+\usepackage{natbib}
+ \bibpunct[, ]{(}{)}{,}{a}{}{,}%
+ \def\bibfont{\small}%
+ \def\bibsep{\smallskipamount}%
+ \def\bibhang{24pt}%
+ \def\newblock{\ }%
+ \def\BIBand{and}%
+
+\TheoremsNumberedThrough{}
+\ECRepeatTheorems{}
+\EquationsNumberedThrough{}
+\MANUSCRIPTNO{}
+
+\begin{document}
+
+\RUNAUTHOR{Dan Nissim}
+\RUNTITLE{Short Title}
+\TITLE{Title of the Paper}
+\ARTICLEAUTHORS{%
+  \AUTHOR{Dan Nissim}
+  \AFF{Department of Statistics and Operations Research, Tel Aviv University,
+    Tel Aviv 69978, Israel. \EMAIL{dannissim@mail.tau.ac.il}}
+}
+
+\ABSTRACT{%
+  The abstract.
+}
+
+\KEYWORDS{Mathematics of Optimization, Approximation Algorithms}
+
+\maketitle
+
+\section{Introduction}
+\section{Content}
+\section{Conclusions}
+
+\begin{APPENDIX}{Title}
+\end{APPENDIX}
+
+\theendnotes{}
+
+\ACKNOWLEDGMENT{}
+
+\bibliographystyle{informs2014}
+\bibliography{library}
+
+\end{document}
