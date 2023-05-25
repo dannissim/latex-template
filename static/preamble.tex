@@ -1,0 +1,27 @@
+\documentclass{static/informs3}
+
+\DoubleSpacedXI{}
+
+\usepackage{endnotes}
+\let\footnote=\endnote
+\let\enotesize=\normalsize
+\def\notesname{Endnotes}%
+\def\makeenmark{$^{\theenmark}$}
+\def\enoteformat{\rightskip0pt\leftskip0pt\parindent=1.75em
+  \leavevmode\llap{\theenmark.\enskip}}
+
+\usepackage{natbib}
+ \bibpunct[, ]{(}{)}{,}{a}{}{,}%
+ \def\bibfont{\small}%
+ \def\bibsep{\smallskipamount}%
+ \def\bibhang{24pt}%
+ \def\newblock{\ }%
+ \def\BIBand{and}%
+
+\TheoremsNumberedThrough{}
+\ECRepeatTheorems{}
+\EquationsNumberedThrough{}
+\MANUSCRIPTNO{}
+
+\begin{document}
+

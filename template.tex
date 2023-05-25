@@ -1,33 +1,8 @@
-\documentclass{informs3}
-
-\DoubleSpacedXI{}
-
-\usepackage{endnotes}
-\let\footnote=\endnote
-\let\enotesize=\normalsize
-\def\notesname{Endnotes}%
-\def\makeenmark{$^{\theenmark}$}
-\def\enoteformat{\rightskip0pt\leftskip0pt\parindent=1.75em
-  \leavevmode\llap{\theenmark.\enskip}}
-
-\usepackage{natbib}
- \bibpunct[, ]{(}{)}{,}{a}{}{,}%
- \def\bibfont{\small}%
- \def\bibsep{\smallskipamount}%
- \def\bibhang{24pt}%
- \def\newblock{\ }%
- \def\BIBand{and}%
-
-\TheoremsNumberedThrough{}
-\ECRepeatTheorems{}
-\EquationsNumberedThrough{}
-\MANUSCRIPTNO{}
-
-\begin{document}
+\input{static/preamble}
 
 \RUNAUTHOR{Dan Nissim}
-\RUNTITLE{Short Title}
-\TITLE{Title of the Paper}
+\RUNTITLE{Title of the Paper, \today}
+\TITLE{Title of the Paper, \today}
 \ARTICLEAUTHORS{%
   \AUTHOR{Dan Nissim}
   \AFF{Department of Statistics and Operations Research, Tel Aviv University,
@@ -53,7 +28,7 @@
 
 \ACKNOWLEDGMENT{}
 
-\bibliographystyle{informs2014}
-\bibliography{library}
+\bibliographystyle{static/informs2014}
+\bibliography{static/library}
 
 \end{document}
